@@ -1,0 +1,27 @@
+
+[
+  {
+    "name": "Arbrim Thaci",
+    "customerType": "Regular Customer",
+    "image": "img/arbrim-thaci.webp",
+    "text": "Restaurantista has become my favorite place to order food. The ordering process is simple, the meals are delicious, and the quality never disappoints."
+  },
+  {
+    "name": "Enes Shala",
+    "customerType": "First-Time Customer",
+    "image": "img/enes-shala.png",
+    "text": "My first order was a great experience. The menu was easy to explore, checkout was quick, and everything arrived just as expected."
+  },
+  {
+    "name": "Violeta Murati Thaci",
+    "customerType": "Loyal Customer",
+    "image": "img/violeta-thaci.webp",
+    "text": "What keeps me coming back is the consistent quality and convenience. Ordering my favorite meals is always a smooth and enjoyable experience."
+  },
+  {
+    "name": "Sample Customer",
+    "customerType": "Returning Customer",
+    "image": "img/user.png",
+    "text": "I decided to order again after enjoying my first meal, and the experience was just as good. Great food and a very convenient ordering process."
+  }
+]

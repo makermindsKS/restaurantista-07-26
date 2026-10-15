@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantista | Home</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Inspiration&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TOSTIFY-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/fec5f513eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/hero.js" defer></script>
+    <script src="js/subscribe.js" defer></script>
+    <script src="js/statistics-animation.js" defer></script>
+    <script src="js/contactForm.js" defer></script>
+    <script src="js/testimonials.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar bg-primary">
+      <div class="navbar-logo">
+        <a href="index.html" class="text-white">Restaurantista</a>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="text-white active">Home</a></li>
+        <li>
+          <a href="menu.html" class="text-white">
+            Menu
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-badge">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Majt -->
+      <div class="hero-content">
+        <h1 class="hero-content-title">
+          Order your <br />
+          <span>Favorite Foods</span>
+        </h1>
+
+        <p class="text-gray">
+          Fresh and tasty seafood curry, sit amet lorem ipsum consectetur
+          Curabitur accumsan auctor pluvinar
+          <span class="text-black">proin sit.</span>
+        </p>
+
+        <div class="order-info">
+          <h3 class="order-info-total">
+            Total Order: <span class="price">$0</span>
+          </h3>
+
+          <div class="order-info-buttons">
+            <div class="quantity-selector">
+              <button id="decrease">-</button>
+              <span id="quantity">1</span>
+              <button id="increase">+</button>
+            </div>
+
+            <button class="add-to-cart">
+              <span class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </span>
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="food-carousel">
+            <button class="carousel-arrow arrleft-ow left-arrow">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="food-items">
+              <div class="food-item selected">
+                <img src="img/pizza.webp" width="200px" alt="Pizza Margarita" />
+                <p>
+                  Margarita <br />
+                  <span class="item-price">
+                    <span class="valute">$</span> 4.50
+                  </span>
+                </p>
+              </div>
+              <div class="food-item">
+                <img src="img/pizza.webp" width="200px" alt="Pizza Margarita" />
+                <p>
+                  Margarita <br />
+                  <span class="item-price">
+                    <span class="valute">$</span> 4.50
+                  </span>
+                </p>
+              </div>
+              <div class="food-item">
+                <img src="img/pizza.webp" width="200px" alt="Pizza Margarita" />
+                <p>
+                  Margarita <br />
+                  <span class="item-price">
+                    <span class="valute">$</span> 4.50
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <button class="carousel-arrow right-arrow">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Djathtas -->
+      <div class="hero-image">
+        <img
+          src="img/pizza.webp"
+          alt="Pizza Margarita"
+          class="hero-main-image"
+        />
+        <div class="food-details">
+          <div class="food-title">
+            <p>Margarita</p>
+            <p>
+              <i class="fa-solid fa-star"></i>
+              <span id="rating">5.0</span>
+            </p>
+          </div>
+          <p class="prepare-time">
+            <i class="fa-regular fa-clock"></i> 13-16 mins
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Steps Section -->
+    <section class="order-steps bg-light">
+      <h1 class="text-primary primary-title">Order with Ease.</h1>
+
+      <div class="order-steps-container">
+        <div class="order-step-card">
+          <img src="img/pasta.svg" alt="Pasta" class="order-step-icon" />
+          <h3 class="order-step-title">Choose</h3>
+          <p class="order-step-description text-gray">
+            Select your favirite dishes.
+          </p>
+        </div>
+
+        <div class="order-step-card">
+          <img src="img/pizza.svg" alt="Pizza" class="order-step-icon" />
+          <h3 class="order-step-title">Order</h3>
+          <p class="order-step-description text-gray">
+            Use our website to experience a smooth online ordering.
+          </p>
+        </div>
+
+        <div class="order-step-card">
+          <img src="img/risotto.svg" alt="Risotto" class="order-step-icon" />
+          <h3 class="order-step-title">Pay</h3>
+          <p class="order-step-description text-gray">
+            Our payment service ensures a seamless aslee-free process.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-content text-white">
+        <h2 class="primary-title">Original taste</h2>
+        <p class="cta-description">
+          Feel excited to taste our amazing food and order online now!
+        </p>
+        <a href="menu.html" class="cta-button text-white">Order online</a>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section bg-light">
+      <h1 class="primary-title text-primary">
+        We like numbers. <br />
+        How about you?
+      </h1>
+
+      <div class="statistics-container">
+        <div class="stat-item">
+          <span class="stat-value" data-target="1000">1000+</span>
+          <p class="stat-description">Happy Customer</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" data-target="250">1000+</span>
+          <p class="stat-description">Delicious Dishes</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" data-target="5000">1000+</span>
+          <p class="stat-description">Orders</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" data-target="5">1000+</span>
+          <p class="stat-description">Daily Websites Visitors</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-section">
+      <div class="about-content text-white">
+        <h2 class="primary-title">About Us</h2>
+        <p class="about-description">
+          Welcome to Restaurantista - where culinary delights meet the digital
+          realm. Our story begins with a passion for exceptional food and a
+          vision to bring delectable flavors directly to your doorstep. As a
+          fully online restaurant, we have reimagined the dining experience,
+          eliminating the need for physical locations and embracing the
+          convenience of the virtual world.
+        </p>
+        <p class="about-description">
+          At Restaurantista, we understand the fast-paced nature of modern life,
+          where time is a precious commodity. With this in mind, we set out to
+          create an innovative platform that seamlessly connects food lovers
+          with a diverse menu of tantalizing dishes, all available at the click
+          of a button.
+        </p>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="subscribe-section bg-primary text-white">
+      <h2 class="primary-title text-white">Never miss a reciep!</h2>
+
+      <form class="subscribe-form" id="subscribeForm">
+        <label for="checkbox" class="subscribe-checkbox">
+          Subscribe to our Newsletter
+          <input type="checkbox" id="checkbox" name="checkbox" />
+        </label>
+
+        <div class="subscribe-form-inline">
+          <input
+            type="text"
+            id="subscriberEmail"
+            placeholder="Your Email..."
+            class="subscriber-input"
+          />
+          <button type="submit" class="subscribe-button">Subscribe</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <h3>Location</h3>
+        <p>
+          123 Main St. <br />
+          Anytown, USA 123456
+        </p>
+
+        <h3>Email</h3>
+        <p>info@restaurantista.com</p>
+
+        <h3>Call Us</h3>
+        <p>+383 44 123 456</p>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.7090243473926!2d21.148953169034986!3d42.37420169533554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547fda8b236933%3A0x1f1da3497f330537!2sThe%20Village%20-%20Shopping%20%26%20Fun!5e1!3m2!1sen!2s!4v1778004725563!5m2!1sen!2s"
+          width="700"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="video-section bg-primary text-white">
+      <h2 class="primary-title">Turn your home into a Restaurant.</h2>
+      <p class="video-description">
+        Are you the kind of person who relishes the joy of savoring delicious
+        food in the comfort of your own home? If you prefer to escape the hustle
+        and bustle of overcrowded restaurants, say goodbye to the stress of
+        making reservations, and indulge in the convenience of dining at your
+        own pace, then you've come to the right place.
+      </p>
+
+      <iframe
+        src="https://www.youtube.com/embed/WW0SLuX8HsI?si=elm0nIxdjIMCHUfr"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="email-section bg-light">
+      <h2 class="text-primary primary-title">Contact Us</h2>
+
+      <div class="email-content">
+        <div class="email-image">
+          <img src="img/email-bg.avif" alt="Email Us" />
+        </div>
+
+        <form class="email-form">
+          <input type="text" id="name" name="name" placeholder="Name..." />
+          <input type="email" id="email" name="email" placeholder="Email..." />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject..."
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message..."
+            rows="5"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+      <h2 class="primary-title text-primary">What Our Clients Say About Us</h2>
+
+      <div class="carousel-indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div class="testimonial-carousel">
+        <button class="carousel-arrow left-arrow-testimonial">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <div class="testimonial-container">
+          <div class="testimonial-card-first">
+            <div class="testimonial-image">
+              <img
+                src="img/arbrim-thaci.webp"
+                alt="Arbrim Thaci"
+                width="200px"
+              />
+            </div>
+            <h3 class="testimonial-name">Arbrim Thaci</h3>
+            <p class="testimonial-role">CEO</p>
+            <p class="testimonial-quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </p>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto, laudantium. Harum dolorem dicta saepe enim, tempore
+              qui soluta sit numquam porro natus itaque recusandae dolore eius
+              sunt incidunt nulla quibusdam!
+            </p>
+          </div>
+
+          <div class="testimonial-card-middle">
+            <div class="testimonial-image">
+              <img src="img/enes-shala.png" alt="Enes Shala" width="200px" />
+            </div>
+            <h3 class="testimonial-name">Enes Shala</h3>
+            <p class="testimonial-role">Lead Front End</p>
+            <p class="testimonial-quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </p>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto, laudantium. Harum dolorem dicta saepe enim, tempore
+              qui soluta sit numquam porro natus itaque recusandae dolore eius
+              sunt incidunt nulla quibusdam!
+            </p>
+          </div>
+          <div class="testimonial-card-third">
+            <div class="testimonial-image">
+              <img
+                src="img/violeta-thaci.webp"
+                alt="Violeta Thaci"
+                width="200px"
+              />
+            </div>
+            <h3 class="testimonial-name">Violeta Thaci</h3>
+            <p class="testimonial-role">Design</p>
+            <p class="testimonial-quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </p>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto, laudantium. Harum dolorem dicta saepe enim, tempore
+              qui soluta sit numquam porro natus itaque recusandae dolore eius
+              sunt incidunt nulla quibusdam!
+            </p>
+          </div>
+        </div>
+
+        <button class="carousel-arrow right-arrow-testimonial">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-top">
+        <div class="footer-left">
+          <h1>Restaurantista</h1>
+          <div class="footer-info">
+            <h2>
+              Turn your home into restaurant <br />
+              with Restaurantista.
+            </h2>
+            <p class="text-gray">Restaurantista, 2026</p>
+          </div>
+        </div>
+        <div class="footer-button">
+          <a href="menu.html" class="order-button">Order Here</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>MarkerMinds 2026 Restaurantista.</p>
+        <div class="footer-links">
+          <a href="#">Terms of Services</a>
+          <a href="#">Privacy & Policy</a>
+          <a href="#">Cookie</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
